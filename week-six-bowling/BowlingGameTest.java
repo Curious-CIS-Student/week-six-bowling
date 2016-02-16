@@ -13,6 +13,7 @@ import org.junit.Test;
  */
 public class BowlingGameTest
 {
+    private BowlingGame g;
     /**
      * Default constructor for test class BowlingGameTest
      */
@@ -28,6 +29,7 @@ public class BowlingGameTest
     @Before
     public void setUp()
     {
+        g = new BowlingGame();
     }
 
     /**
@@ -40,14 +42,28 @@ public class BowlingGameTest
     {
     }
 
-    @Test
-    public void FirstTest()
-    {
-        BowlingGame game1 = new BowlingGame();
-        for (int i=0;i<20;i++) {
-            game1.roll(0);
+    private void rollMany(int n, int pins) {
+        for (int i=0;i<n;i++) {
+            g.roll(pins);
         }
-        assertEquals(0,game1.score());
+        
+    }
+    
+    @Test
+    public void testGutterGame()
+    {
+       
+        rollMany(20,0);
+        assertEquals(0,g.score());
+    }
+
+    @Test
+    public void testAllOnes()
+    {
+       
+        rollMany(20,1);
+        assertEquals(20, g.score());
     }
 }
+
 

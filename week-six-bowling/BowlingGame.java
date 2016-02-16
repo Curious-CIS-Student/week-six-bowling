@@ -7,7 +7,7 @@
  */
 public class BowlingGame
 {
-    
+    private int score = 0;
     /**
      * Constructor for objects of class BowlingGame
      */
@@ -15,11 +15,11 @@ public class BowlingGame
     {
     }
 public void roll(int pins) {
-    
+    score += pins;
 }
 
 public int score() {
-    return -1;
+    return score;
 }
    
 }
