@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BowlingGame()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BowlingGame\n
+comment1.params=pins
+comment1.target=void\ roll(int)
+comment2.params=
+comment2.target=int\ score()
+numComments=3
