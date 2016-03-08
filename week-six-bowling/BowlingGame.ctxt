@@ -1,9 +1,19 @@
 #BlueJ class context
 comment0.params=
 comment0.target=BowlingGame()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BowlingGame\n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ BowlingGame\r\n
 comment1.params=pins
 comment1.target=void\ roll(int)
 comment2.params=
 comment2.target=int\ score()
-numComments=3
+comment3.params=frameIndex
+comment3.target=boolean\ isStrike(int)
+comment4.params=frameIndex
+comment4.target=int\ sumOfBallsInFrame(int)
+comment5.params=frameIndex
+comment5.target=int\ spareBonus(int)
+comment6.params=frameIndex
+comment6.target=int\ strikeBonus(int)
+comment7.params=frameIndex
+comment7.target=boolean\ isSpare(int)
+numComments=8
